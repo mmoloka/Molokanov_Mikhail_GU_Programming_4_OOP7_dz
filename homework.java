@@ -17,8 +17,8 @@ public class homework {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int flag = 0;
-        while(flag == 0){
+        boolean flag = true;
+        while(flag){
             System.out.println("Введите первое число: ");
             int num1 = sc.nextInt();
             System.out.println("Введите второе число: ");
@@ -43,7 +43,7 @@ public class homework {
             String answer = sc.next();
             switch(answer.toUpperCase()){
                 case "NO":
-                flag++;
+                flag  = false;
                 break;
             }
         }
